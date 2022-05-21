@@ -1,0 +1,33 @@
+.signInButton{
+    height: 3rem;
+    border-radius: 3rem;//para borda máx,colocar msm valor da altura
+    background: var(--gray-850);
+    border: 0;
+    padding: 0 1.5rem;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+    font-weight: bold;
+
+    svg{//para alterar tamanho de svg, colocar altura e largura
+        width: 20px;
+        height: 20px;
+    }
+
+    svg:first-child{//aplica apenas no primeiro svg 
+        margin-right: 1rem;
+    }
+
+    svg.closeIcon{
+        margin-left: 1rem;
+    }
+    
+    transition: filter 0,2s;
+
+    &:hover{//efeito de reduzir o brilho em 20% ao passar o mouse
+        filter: brightness(0.8); 
+    }
+}
